@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1680097970 source:c:\users\hp\desktop\portfolio programy na github\c++\programs\quicksort i bubble sort - porownanie czasu sortowania\main.cpp
+	<iostream>
+	<time.h>
+	<windows.h>
+
+1742178094 source:f:\my portafolio it ulepszona\c++\programs\quicksort i bubble sort - comparison of sorting time\sort_utils.cpp
+	"sort_utils.h"
+
+1742178096 f:\my portafolio it ulepszona\c++\programs\quicksort i bubble sort - comparison of sorting time\sort_utils.h
+	<iostream>
+	<windows.h>
+	<fstream>
+	<string>
+	<ctime>
+	<limits>
+

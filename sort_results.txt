@@ -1,0 +1,15 @@
+Test results [1742178116]:
+Array size: 4
+Bubble sort time: 0s
+Quick sort time: 0s
+
+Test results [1742178128]:
+Array size: 1000
+Bubble sort time: 0s
+Quick sort time: 0s
+
+Test results [1742178375]:
+Array size: 100000
+Bubble sort time: 0.015s
+Quick sort time: 0.015s
+
