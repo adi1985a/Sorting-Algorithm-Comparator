@@ -21,6 +21,8 @@ _A C++ console application for comparing the performance (execution time) of Bub
 
 **Sorting Algorithm Showdown** is an insightful C++ console application designed to practically demonstrate and compare the performance characteristics of two fundamental sorting algorithms: **Bubble Sort** and **Quicksort**. The program generates an array of random numbers of a user-specified size, then meticulously measures and displays the execution time taken by each algorithm to sort an identical copy of this array. Results, including array size and timings for both sorts, are saved to `sort_results.txt` for later analysis. The application features a colorful user interface and robust error handling for invalid inputs, making it an excellent educational tool for understanding algorithmic efficiency.
 
+![Demo GIF](screenshots/1.gif)
+
 ## ✨ Key Features
 
 *   🎲 **Random Array Generation**: Creates arrays of random integers with a user-defined size (up to 1,000,000 elements).
@@ -35,9 +37,20 @@ _A C++ console application for comparing the performance (execution time) of Bub
 
 ## 🖼️ Screenshots
 
-**Coming soon!**
+_Screenshots showcasing the array size input, the display of sorting times for Bubble Sort and Quicksort, and an example of the `sort_results.txt` file content._
 
-_This section will be updated with screenshots showcasing the array size input, the display of sorting times for Bubble Sort and Quicksort, and an example of the `sort_results.txt` file content._
+<p align="center">
+  <img src="screenshots\1.jpg" width="300"/>
+  <img src="screenshots\2.jpg" width="300"/>
+  <img src="screenshots\3.jpg" width="300"/>
+  <img src="screenshots\4.jpg" width="300"/>
+  <img src="screenshots\5.jpg" width="300"/>
+  <img src="screenshots\6.jpg" width="300"/>
+  <img src="screenshots\7.jpg" width="300"/>
+  <img src="screenshots\8.jpg" width="300"/>
+  <img src="screenshots\9.jpg" width="300"/>
+  <img src="screenshots\10jpg" width="300"/>
+</p>
 
 ## ⚙️ System Requirements
 
