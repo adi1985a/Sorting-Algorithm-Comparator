@@ -71,39 +71,29 @@ _Screenshots showcasing the array size input, the display of sorting times for B
 3.  **Create `sort_utils.h`**:
     Before compiling, you **must** create a file named `sort_utils.h` in the project's root directory. This file should define necessary utility functions. Here's an illustrative example:
     ```cpp
-    #ifndef SORT_UTILS_H
-    #define SORT_UTILS_H
+    #pragma once
+#include <iostream>
+#include <windows.h>
+#include <fstream>
+#include <string>
+#include <ctime>
+#include <limits>
 
-    #include <string>
-    #include <vector> // If used by any helper function
-    #ifdef _WIN32
-    #include <windows.h> // For SetConsoleTextAttribute, system("cls")
-    #include <conio.h>   // For _getch()
-    #endif
-    #include <iostream>  // For std::cout, std::cin
-    #include <fstream>   // For logging
-    #include <ctime>     // For timestamps in logs
+enum Color { 
+    BLUE = 9,
+    GREEN = 10,
+    CYAN = 11,
+    RED = 12,
+    MAGENTA = 13,
+    YELLOW = 14,
+    WHITE = 15
+};
 
-    // Example: Console Color Constants
-    const int CLR_DEFAULT = 7;
-    const int CLR_PROMPT = 10;  // Light Green
-    const int CLR_INFO = 11;    // Light Cyan
-    const int CLR_RESULTS = 14; // Yellow
-    const int CLR_ERROR = 12;   // Light Red
-
-    // Function declarations - implement these in sort_utils.cpp or as inline
-    void setColor(int colorCode);
-    void clearScreen();
-    void drawLine(char c = '=', int length = 50);
-    void waitForKeyPress(const std::string& message = "Press any key to continue, or 0 to exit from main prompt...");
-    void logError(const std::string& message, const std::string& logFilePath = "comparator_errors.log"); // Or use one log file
-    void logResults(const std::string& message, const std::string& resultsFilePath = "sort_results.txt"); // For appending sort times
-
-    // You might also have functions for generating random arrays or timing here,
-    // or they could be in main.cpp or another specific algorithm utility file.
-    // std::vector<int> generateRandomArray(int size, int minVal = 0, int maxVal = 10000);
-
-    #endif // SORT_UTILS_H
+void setColor(Color color);
+void drawLine(char c = '-', int length = 50);
+void clearScreen();
+void waitForKeyPress();
+void logError(const std::string& error);
     ```
     *Adjust these constants and function declarations to precisely match what your `main.cpp` (and potentially your sorting algorithm implementations) expect. Implement these functions, likely in a `sort_utils.cpp` file.*
 
