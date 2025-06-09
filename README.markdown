@@ -72,28 +72,28 @@ _Screenshots showcasing the array size input, the display of sorting times for B
     Before compiling, you **must** create a file named `sort_utils.h` in the project's root directory. This file should define necessary utility functions. Here's an illustrative example:
     ```cpp
     #pragma once
-#include <iostream>
-#include <windows.h>
-#include <fstream>
-#include <string>
-#include <ctime>
-#include <limits>
+    #include <iostream>
+    #include <windows.h>
+    #include <fstream>
+    #include <string>
+    #include <ctime>
+    #include <limits>
 
-enum Color { 
-    BLUE = 9,
-    GREEN = 10,
-    CYAN = 11,
-    RED = 12,
-    MAGENTA = 13,
-    YELLOW = 14,
-    WHITE = 15
-};
-
-void setColor(Color color);
-void drawLine(char c = '-', int length = 50);
-void clearScreen();
-void waitForKeyPress();
-void logError(const std::string& error);
+    enum Color { 
+        BLUE = 9,
+        GREEN = 10,
+        CYAN = 11,
+        RED = 12,
+        MAGENTA = 13,
+        YELLOW = 14,
+        WHITE = 15
+    };
+   
+    void setColor(Color color);
+    void drawLine(char c = '-', int length = 50);
+    void clearScreen();
+    void waitForKeyPress();
+    void logError(const std::string& error);
     ```
     *Adjust these constants and function declarations to precisely match what your `main.cpp` (and potentially your sorting algorithm implementations) expect. Implement these functions, likely in a `sort_utils.cpp` file.*
 
